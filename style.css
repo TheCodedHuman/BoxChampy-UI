@@ -1,0 +1,340 @@
+/*--------------------------------- GLOBAL --------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Saira Condensed", Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: #101010;   #matches bg-color of hero-img*/
+    background-color: #222222;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+span {
+    color: red;
+}
+
+
+button {
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*--------------------------------- HEADER --------------------------------- */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    width: 1920px;
+    height: 1280px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 14%;
+    left: 8%;
+    font-size: 9em;
+}
+
+.real-hero {
+    background-image: url(stash/Hero.jpg);
+    background-position: center center;
+    width: 1920px;
+    height: 1280px;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(0.65);
+}
+
+/*---------------- NavBar ----------------*/
+
+.nav-wrapper {
+    margin-top: 40px;
+    height: 60px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;  /*maybe redundant*/
+    font-size: 1.55em;
+}
+
+.nav-wrapper h3 {
+    font-size: 1.75em;
+    padding-bottom: 8px;
+}
+
+.nav-wrapper div {
+    align-self: center;
+}
+
+/*---------------- Nav Logo ----------------*/
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/*---------------- Nav Links ----------------*/
+
+.nav-links {
+    width: 50%;
+}
+
+.nav-links button {
+    padding: 0.2em 1.5em;
+    font-size: 1em;
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+}
+
+
+/*--------------------------------- MAIN --------------------------------- */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.skewed {
+    width: 1920px;
+    height: 1280px;
+    background-color: #CDDCEA;
+    transform: skewY(-10deg);
+    position: relative;
+    top: -26em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    width: 85%;
+    height: 100%;
+    transform: skewY(10deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8em;
+}
+
+.content-wrapper > div {
+    width: 50%;
+}
+
+
+/*---------------- Image at left ----------------*/
+
+.mid-img {
+    background-image: url(stash/Grul.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50%;
+}
+
+
+/*---------------- Content at right ----------------*/
+
+.mid-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.mc-upper {
+    display: flex;
+    font-size: 2.65em;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mc-upper > div {
+    background-color: #FF0000;
+    width: 1rem;
+    height: 10rem;
+}
+
+.mc-upper h2 {
+    color: black;
+}
+
+.mc-lower {
+    font-size: 1.5em;
+}
+
+.mc-lower {
+    color: #938585;
+}
+
+.sign-low button {
+    margin-top: 80px;
+    padding: 0.2em 0.7em;
+    font-size: 1.75em;
+}
+
+
+/*--------------------------------- FOOTER --------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -37em;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+footer > div {
+    background-color: black;
+    width: 1920px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+footer > div > div {
+    width: 85%;
+}
+
+/*---------------- footer-upper ----------------*/
+
+.fupper {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
+.fupper i {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+
+.fupper h2 {
+    line-height: 1em;
+    font-size: 4.5em;
+}
+
+
+/*---------------- footer-lower ----------------*/
+
+.fire {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fire a {
+    color: #938585;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.fire i {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+
+.fire-right a {
+    margin-left: 1.4em;
+}
+
+
+/*--------------------------------- MID-WHITE --------------------------------- */
+
+aside {
+    position: relative;
+    z-index: 1;
+}
+
+.mid-icons {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    gap: 6em;
+    padding: 1.6em 2em;
+    width: 670px;
+    height: 110px;
+    transform: translate(-50%, -312%);
+    box-shadow: 0 28px 80px 10px rgba(255, 0, 0, 0.2);
+}
+
+.icon-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box p {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FF0000;
+    margin-top: 0.5em;
+    position: relative;
+    top: -10px;
+}
+
+.icon-box > div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 70px;
+    background-position: center center;
+}
+
+
+.im1 {
+    background-image: url(stash/shoe.png);
+}
+
+.im2 {
+    background-image: url(stash/medi.png);
+}
+
+.im3 {
+    background-image: url(stash/dumbbell.png);
+}
+
+
+
+/* Have An Amazing Day! */
